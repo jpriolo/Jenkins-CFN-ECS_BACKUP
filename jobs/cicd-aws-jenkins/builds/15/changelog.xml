@@ -1,0 +1,11 @@
+commit c4e192fed2989c13a74871629c6a597779c40699
+tree ffedb42be658ffd290e8a70319e41f11c5e61fa0
+parent c9ddb11561c651b9f125f2a0d1123127678b31a2
+author joseph p <joepp379@gmail.com> 2018-04-13 11:33:14 -0700
+committer GitHub <noreply@github.com> 2018-04-13 11:33:14 -0700
+
+    Rename index.php to index.php.DOCKER
+
+
+
+:100644 100644 4a54a79dc5c9f50d77cfcd6ed43f2198d26279c4 4a54a79dc5c9f50d77cfcd6ed43f2198d26279c4 R100	www/index.php	www/index.php.DOCKER

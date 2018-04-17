@@ -1,0 +1,189 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/cicd-aws-jenkins
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jpriolo/cicd-aws-jenkins-PW.git # timeout=10
+Fetching upstream changes from https://github.com/jpriolo/cicd-aws-jenkins-PW.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jpriolo/cicd-aws-jenkins-PW.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 81221b354559df9db1ef6e55533ed6b5b874b0d6 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 81221b354559df9db1ef6e55533ed6b5b874b0d6
+Commit message: "Add files via upload"
+ > git rev-list --no-walk 9a4b40f2b38c95f5e716949d684bf4365e4953ec # timeout=10
+[cicd-aws-jenkins] $ /bin/bash /tmp/jenkins8162812697675430349.sh
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+Login Succeeded
+[cicd-aws-jenkins] $ docker build -t 583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo:v_13 --pull=true /var/lib/jenkins/workspace/cicd-aws-jenkins
+Sending build context to Docker daemon  1.493MB
+Step 1/7 : FROM alpine:3.4
+3.4: Pulling from library/alpine
+Digest: sha256:2532609239f3a96fbc30670716d87c8861b8a1974564211325633ca093b11c0b
+Status: Image is up to date for alpine:3.4
+ ---> c7fc7faf8c28
+Step 2/7 : RUN apk --update add nginx php5-fpm &&     mkdir -p /var/log/nginx &&     touch /var/log/nginx/access.log &&     mkdir -p /run/nginx
+ ---> Using cache
+ ---> df8d3e9cedbc
+Step 3/7 : ADD www /www
+ ---> b272479d9cf9
+Step 4/7 : ADD nginx.conf /etc/nginx/
+ ---> 1d0778deb977
+Step 5/7 : ADD php-fpm.conf /etc/php5/php-fpm.conf
+ ---> b84a9bbd6b2c
+Step 6/7 : EXPOSE 80
+ ---> Running in 13faa6d1dda3
+Removing intermediate container 13faa6d1dda3
+ ---> 2ece3b8adc59
+Step 7/7 : CMD php-fpm -d variables_order="EGPCS" && (tail -F /var/log/nginx/access.log &) && exec nginx -g "daemon off;"
+ ---> Running in c19929fde58c
+Removing intermediate container c19929fde58c
+ ---> 154ee014e692
+Successfully built 154ee014e692
+Successfully tagged 583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo:v_13
+[cicd-aws-jenkins] $ docker tag 154ee014e692 583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo:latest
+[cicd-aws-jenkins] $ docker inspect 154ee014e692
+[cicd-aws-jenkins] $ docker push 583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo:v_13
+The push refers to repository [583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo]
+35d97db11eff: Preparing
+6bdc5442112b: Preparing
+16c96ef03d55: Preparing
+b593180fc87f: Preparing
+e53f74215d12: Preparing
+b593180fc87f: Layer already exists
+e53f74215d12: Layer already exists
+6bdc5442112b: Pushed
+35d97db11eff: Pushed
+16c96ef03d55: Pushed
+v_13: digest: sha256:202c8a333b9c621afd9e4376f16d583aa5df62ee3fc86ff20786f07aedd58a03 size: 1364
+[cicd-aws-jenkins] $ docker push 583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo:latest
+The push refers to repository [583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo]
+35d97db11eff: Preparing
+6bdc5442112b: Preparing
+16c96ef03d55: Preparing
+b593180fc87f: Preparing
+e53f74215d12: Preparing
+16c96ef03d55: Layer already exists
+35d97db11eff: Layer already exists
+b593180fc87f: Layer already exists
+e53f74215d12: Layer already exists
+6bdc5442112b: Layer already exists
+latest: digest: sha256:202c8a333b9c621afd9e4376f16d583aa5df62ee3fc86ff20786f07aedd58a03 size: 1364
+[cicd-aws-jenkins] $ /bin/bash /tmp/jenkins8777450823621102746.sh
+{
+    "taskDefinition": {
+        "status": "ACTIVE", 
+        "family": "pw-ecr-repo", 
+        "placementConstraints": [], 
+        "requiresAttributes": [
+            {
+                "name": "com.amazonaws.ecs.capability.ecr-auth"
+            }
+        ], 
+        "compatibilities": [
+            "EC2"
+        ], 
+        "volumes": [], 
+        "taskDefinitionArn": "arn:aws:ecs:us-west-2:583396343160:task-definition/pw-ecr-repo:3", 
+        "containerDefinitions": [
+            {
+                "environment": [], 
+                "name": "pw-ecr-repo", 
+                "mountPoints": [], 
+                "image": "583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo:v_13", 
+                "cpu": 10, 
+                "portMappings": [
+                    {
+                        "protocol": "tcp", 
+                        "containerPort": 80, 
+                        "hostPort": 80
+                    }
+                ], 
+                "memory": 256, 
+                "essential": true, 
+                "volumesFrom": []
+            }
+        ], 
+        "revision": 3
+    }
+}
+entered existing service
+{
+    "service": {
+        "status": "ACTIVE", 
+        "taskDefinition": "arn:aws:ecs:us-west-2:583396343160:task-definition/pw-ecr-repo:3", 
+        "pendingCount": 0, 
+        "launchType": "EC2", 
+        "loadBalancers": [], 
+        "placementConstraints": [], 
+        "createdAt": 1523602695.874, 
+        "desiredCount": 1, 
+        "serviceName": "pw-ecr-repo-service", 
+        "clusterArn": "arn:aws:ecs:us-west-2:583396343160:cluster/PW-CLUSTER", 
+        "serviceArn": "arn:aws:ecs:us-west-2:583396343160:service/pw-ecr-repo-service", 
+        "deploymentConfiguration": {
+            "maximumPercent": 200, 
+            "minimumHealthyPercent": 100
+        }, 
+        "deployments": [
+            {
+                "status": "PRIMARY", 
+                "pendingCount": 0, 
+                "launchType": "EC2", 
+                "createdAt": 1523644219.046, 
+                "desiredCount": 1, 
+                "taskDefinition": "arn:aws:ecs:us-west-2:583396343160:task-definition/pw-ecr-repo:3", 
+                "updatedAt": 1523644219.046, 
+                "id": "ecs-svc/9223370513210556760", 
+                "runningCount": 0
+            }, 
+            {
+                "status": "ACTIVE", 
+                "pendingCount": 0, 
+                "launchType": "EC2", 
+                "createdAt": 1523637582.093, 
+                "desiredCount": 1, 
+                "taskDefinition": "arn:aws:ecs:us-west-2:583396343160:task-definition/pw-ecr-repo:2", 
+                "updatedAt": 1523637582.093, 
+                "id": "ecs-svc/9223370513217193713", 
+                "runningCount": 1
+            }
+        ], 
+        "events": [
+            {
+                "message": "(service pw-ecr-repo-service) has reached a steady state.", 
+                "id": "a36c7bc3-77a6-40c4-a405-219f2e2ae19b", 
+                "createdAt": 1523637606.638
+            }, 
+            {
+                "message": "(service pw-ecr-repo-service) has started 1 tasks: (task eb310f96-ec2b-4103-8a47-09590ffd9802).", 
+                "id": "a851022b-2a73-4548-a478-59492629a45b", 
+                "createdAt": 1523637594.707
+            }, 
+            {
+                "message": "(service pw-ecr-repo-service) was unable to place a task because no container instance met all of its requirements. Reason: No Container Instances were found in your cluster. For more information, see the Troubleshooting section of the Amazon ECS Developer Guide.", 
+                "id": "ba1231b2-a6da-4771-854b-d4d377e647d4", 
+                "createdAt": 1523624800.002
+            }, 
+            {
+                "message": "(service pw-ecr-repo-service) was unable to place a task because no container instance met all of its requirements. Reason: No Container Instances were found in your cluster. For more information, see the Troubleshooting section of the Amazon ECS Developer Guide.", 
+                "id": "fb1b9038-8a94-457f-8a94-8fab995331d4", 
+                "createdAt": 1523602947.424
+            }, 
+            {
+                "message": "(service pw-ecr-repo-service) has reached a steady state.", 
+                "id": "b67af297-9794-46a8-9adf-5fb5ff2268e8", 
+                "createdAt": 1523602716.065
+            }, 
+            {
+                "message": "(service pw-ecr-repo-service) has started 1 tasks: (task 1a5715b9-4ab0-4b35-a7d9-937a060016cf).", 
+                "id": "8f33fd44-6baf-48d9-9b85-2dd7c9832d8d", 
+                "createdAt": 1523602705.388
+            }
+        ], 
+        "runningCount": 1, 
+        "placementStrategy": []
+    }
+}
+Finished: SUCCESS
