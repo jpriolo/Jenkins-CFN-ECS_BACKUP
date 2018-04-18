@@ -1,0 +1,203 @@
+Started by user [8mha:////4CYvHlujDldhFa6hxDHGGcsWW/d7ifkZKNdqUETUMtakAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZe/dLi1CL9rIKizPycfAAVOTTpwgAAAA==[0mJP
+Building on master in workspace /var/lib/jenkins/workspace/cicd-maven-docker-ecs01
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jpriolo/cicd-maven-docker-ecs01.git # timeout=10
+Fetching upstream changes from https://github.com/jpriolo/cicd-maven-docker-ecs01.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jpriolo/cicd-maven-docker-ecs01.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 60942cee98bef48bcde0ce60be9070d6af39ef1c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 60942cee98bef48bcde0ce60be9070d6af39ef1c
+Commit message: "Update taskdef.json"
+ > git rev-list --no-walk 60942cee98bef48bcde0ce60be9070d6af39ef1c # timeout=10
+[cicd-maven-docker-ecs01] $ /bin/bash /tmp/jenkins9083481742541066181.sh
+Hello Joseph! 
+aws-cli/1.14.9 Python/2.7.12 Linux/4.9.62-21.56.amzn1.x86_64 botocore/1.8.13
+AWS CLI is installed. Exiting...
+docker login -u AWS -p eyJwYXlsb2FkIjoiZm8rcHZRalpqZzJtQ0Zwcm9ENEFmRlAweTdicExYVzdXdjN6SFNjZlhNVTUyWVpGMHZtUHRFdWZNaERMYzVCYUZIek13dWxxZkwvSWRZOGFqOHpwMnhPUmcxNDc3RzFhOXE1amlSSTBpWHVvMGlxNUVsZG9oTTArVC9SSUMyZzJxSXRoVnk3QmR0SXM0NEV0d1Z0emI2emF4RGVRMnlBQ0RQMlkrYWFNandyNThrKzZ2eUhkWm5XekNqWmw5eGs0TURTWVF1NjZ1MEEwNVpaSWZSWFJHdkRpWFBPOUVTL2o5MWNTTW9WUEhtL0Q3YkV3TXJyV09TNG01RlU5TlhOYzRWUDJ5ZGxRRFh1UHE3cjB0YUhmb1V3alk0SE1LSlZYL3lwdUttUlM4YkVoWEFmb3hzeURxeUtPeEVDL0dWUDkvWXhQRTdTRkVOcGYrU3RYVmpYVE5WbURheEIxVm01Y2J5dUZhSFc0dC9FVWdOMmdZYlYvaXNMaHFqTUNlVjhzTFlNZDBWa0kzZmpHcXphYlNvbEdVZnVYSGRSRWpDSnZ3cUtUZVlLM2pTbE1KVGQ4ZVkwdkhwcFZYSnBXaGl1a1RDSXFPeFVJUzB5WnIvVVBBNy9OUlcvdHNUNnZBMldjWW5Ga0V4T0Q0UzBLeDk1bndFTUZKV0tCNjdHY0lhUCtNYVhSdHVRSlVRaktDbmFWSy9TYzJIcnphQ1g4aThhUEM2Qk4vd3F0KzVhc0JLQVV6ZFF1U016U0JIOXViQnNqN0lqVWJ1aE84WnFVSkNRcWUxc0V3Sk9QeCtMYkhqc1dNdkJUZEp2T2Nzb1RPRU9jeWJRTnFtOHoyVDVjY0xMV2NzL2VTbTVrODZPM2pTbnNDUFVsdzhMdzFydUxHY1hHQnNQNExwc0ZMMnY2L0hWaU1pejRadm81YnoxN2F2ekhtRkw4SWZBenhGNWY1bUJaanhVVFA5V2xGRlkrc3hLbFhzUlBBNUM5NjVpWUdjelA1NGw5UjcvSVhVZEhrWUZZUlNrZUZrUldGdFR0N0lnbHBPd1Rwc2lSd21sbFJzRG12TEJJd2krMndYR2lrMWRPcEEyOGU5a3NFd1dtQWpFMk9PTHp2K2I4MlhwTmlLL0tWZEVMOTJaNnZ0ZGRFS2JqSVJveW9lVlY0ZFVPdTNkNVpTM2pVNC9ob1JtYTlUT1ZjOFpNZUthL0h4L21OcDdyR1VaV2RkVWlRb1JtSXc1a0RjdVNwU1AwZHArekpGOGtnVjg2THBQVmM4ZXY1VzhEenpSTUxVTkdFelVkdWJIZERGQ25JMUk1dUFqWk5yNHlwNVlHditTREorb0ozM0t0Ui9Db29aS3lNRzNvYmRsSmkyVUNoa2pWanhlRVpOU2xtM0JPb1U2ekxWazhRdmpqMnMxb1FQM2J3TXpFdzlLRHY1aDM4blFCeHY3Z2NyMmQwY3RCMDJ1Q0cvUWxRK1ZuSzNHMVRNTkZsVmN4dkNBdWIyaS9JbHNTUVBLVHZrck9aa1ZXQ2MxRTRLK1BhcVFLWFVyYW1YWUtxV2x2T3BLMUVNbWhoalRTTjd5TnBNS0lKbDJjOXlSZitSNDFYWS9nSXdXRzM3dkNBcWdmZkZORGdvbEFUTVhQdk9EdEpWc2QxNTUwZVFLR2ZqQUZsRjNJdVpyWDE3WHZCUHRrQmcrL0ZnVGhWb2RXKytVMmF6R001VEdxc3dvSUtBc3ZUM2psNDdzWGx5NEVwWlFKRjNUcWVMSGhEWWpMNzZXZThkTUh0VW5jRFhiTTZoRmpRRFZvczREZE5tSzVWR05RRUFrT2JYc1VVdFk4OHhxTXQxRFo3T21ETEMyNit4c0pZbVRPRE1oZkhBNU5FeVFVNWpHMVY3RS9iSmljNTFpNFlKUmhCN1RUNE9ObEJrblI4YXFZa2ZpbjFTYWJJcW9DRDFNN1FXZjE2QStRR3N6M1AzeTlLTUJLRythK1B4dFk4TS9NanRRUEplUnNEQThQQUMvNjdMaTN0TGx1UW93d1A1SFRraS9JSCtTYVZhejA0Y0JRUVF2Ky9ZaklXdzBENUdPNEFnd3lCWTF3amp1TlE3ZEZMZXBIS1JmYS8rNytpSFVoamxQYU1GdzdLMWdzWWc9PSIsImRhdGFrZXkiOiJBUUVCQUhqNmxjNFhJSncvN2xuMEhjMDBETWVrNkdFeEhDYlk0UklwVE1DSTU4SW5Vd0FBQUg0d2ZBWUpLb1pJaHZjTkFRY0dvRzh3YlFJQkFEQm9CZ2txaGtpRzl3MEJCd0V3SGdZSllJWklBV1VEQkFFdU1CRUVESXdzdlU3VVN6QklBNlQxUFFJQkVJQTc4TkdNa09MYU0yRGRSdEpmRVl5eGhsTHM0YWFKSjgrRm5haWc4OUNqWTZSSkx2Vk1IYThQVk95VVBua1IwTVdBNUNXUTRKZzlIWWJVbnFnPSIsInZlcnNpb24iOiIyIiwidHlwZSI6IkRBVEFfS0VZIiwiZXhwaXJhdGlvbiI6MTUyNDA1Mzc3OH0= https://583396343160.dkr.ecr.us-west-2.amazonaws.com
+[cicd-maven-docker-ecs01] $ docker build -t 583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo-02:v_2 --pull=true /var/lib/jenkins/workspace/cicd-maven-docker-ecs01
+Sending build context to Docker daemon  95.23kB
+Step 1/5 : From maven:3.3-jdk-8-onbuild
+3.3-jdk-8-onbuild: Pulling from library/maven
+Digest: sha256:c3039755bba6dbe632a0a62d4c9396dc4a80829757f1f49bc3e5762f1a825312
+Status: Image is up to date for maven:3.3-jdk-8-onbuild
+# Executing 2 build triggers
+ ---> Using cache
+ ---> Using cache
+ ---> 0aa7d1d2181b
+Step 2/5 : From tomcat:8.0-jre8
+8.0-jre8: Pulling from library/tomcat
+Digest: sha256:1fa9a9e84005dd6119af34556f875b39d3153d1504cd6807b5af643b838f5204
+Status: Image is up to date for tomcat:8.0-jre8
+ ---> ee80ae78d593
+Step 3/5 : COPY --from=0 /usr/src/app/target/mywebapp.war ${CATALINA_HOME}/webapps/mywebapp.war
+ ---> Using cache
+ ---> c76d3784cfb9
+Step 4/5 : CMD ["catalina.sh", "run"]
+ ---> Using cache
+ ---> 01a65758e8fe
+Step 5/5 : EXPOSE 8081:8080
+ ---> Using cache
+ ---> 4d6939c17bc2
+Successfully built 4d6939c17bc2
+Successfully tagged 583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo-02:v_2
+[cicd-maven-docker-ecs01] $ docker tag 4d6939c17bc2 583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo-02:latest
+[cicd-maven-docker-ecs01] $ docker inspect 4d6939c17bc2
+[cicd-maven-docker-ecs01] $ docker push 583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo-02:v_2
+The push refers to repository [583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo-02]
+f2fdeddd6965: Preparing
+194ed62666f8: Preparing
+7124d43607ae: Preparing
+a879290dfdd6: Preparing
+a332fa23fbfd: Preparing
+5c64efab6b1e: Preparing
+148268bf14be: Preparing
+6a47dae912f7: Preparing
+00439e7d6354: Preparing
+a1a8b7f7efac: Preparing
+341d865c1c22: Preparing
+61c06e07759a: Preparing
+bcbe43405751: Preparing
+e1df5dc88d2c: Preparing
+6a47dae912f7: Waiting
+00439e7d6354: Waiting
+a1a8b7f7efac: Waiting
+341d865c1c22: Waiting
+61c06e07759a: Waiting
+bcbe43405751: Waiting
+e1df5dc88d2c: Waiting
+5c64efab6b1e: Waiting
+148268bf14be: Waiting
+f2fdeddd6965: Pushed
+a879290dfdd6: Pushed
+194ed62666f8: Pushed
+a332fa23fbfd: Pushed
+5c64efab6b1e: Pushed
+148268bf14be: Pushed
+00439e7d6354: Pushed
+a1a8b7f7efac: Pushed
+341d865c1c22: Pushed
+7124d43607ae: Pushed
+61c06e07759a: Pushed
+bcbe43405751: Pushed
+e1df5dc88d2c: Pushed
+6a47dae912f7: Pushed
+v_2: digest: sha256:70871cce5fa1f112b9cc919824070ee3b6c6fc4fe01b203ae6823a3f90d0099b size: 3255
+[cicd-maven-docker-ecs01] $ docker push 583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo-02:latest
+The push refers to repository [583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo-02]
+f2fdeddd6965: Preparing
+194ed62666f8: Preparing
+7124d43607ae: Preparing
+a879290dfdd6: Preparing
+a332fa23fbfd: Preparing
+5c64efab6b1e: Preparing
+148268bf14be: Preparing
+6a47dae912f7: Preparing
+00439e7d6354: Preparing
+a1a8b7f7efac: Preparing
+341d865c1c22: Preparing
+61c06e07759a: Preparing
+bcbe43405751: Preparing
+e1df5dc88d2c: Preparing
+5c64efab6b1e: Waiting
+148268bf14be: Waiting
+6a47dae912f7: Waiting
+00439e7d6354: Waiting
+a1a8b7f7efac: Waiting
+341d865c1c22: Waiting
+61c06e07759a: Waiting
+bcbe43405751: Waiting
+e1df5dc88d2c: Waiting
+194ed62666f8: Layer already exists
+7124d43607ae: Layer already exists
+a332fa23fbfd: Layer already exists
+a879290dfdd6: Layer already exists
+148268bf14be: Layer already exists
+f2fdeddd6965: Layer already exists
+00439e7d6354: Layer already exists
+6a47dae912f7: Layer already exists
+5c64efab6b1e: Layer already exists
+341d865c1c22: Layer already exists
+61c06e07759a: Layer already exists
+e1df5dc88d2c: Layer already exists
+a1a8b7f7efac: Layer already exists
+bcbe43405751: Layer already exists
+latest: digest: sha256:70871cce5fa1f112b9cc919824070ee3b6c6fc4fe01b203ae6823a3f90d0099b size: 3255
+[cicd-maven-docker-ecs01] $ /bin/bash /tmp/jenkins435791704193145209.sh
+{
+    "taskDefinition": {
+        "status": "ACTIVE", 
+        "family": "pw-ecr-repo-02", 
+        "placementConstraints": [], 
+        "requiresAttributes": [
+            {
+                "name": "com.amazonaws.ecs.capability.ecr-auth"
+            }
+        ], 
+        "compatibilities": [
+            "EC2"
+        ], 
+        "volumes": [], 
+        "taskDefinitionArn": "arn:aws:ecs:us-west-2:583396343160:task-definition/pw-ecr-repo-02:1", 
+        "containerDefinitions": [
+            {
+                "environment": [], 
+                "name": "pw-ecr-repo-02", 
+                "mountPoints": [], 
+                "image": "583396343160.dkr.ecr.us-west-2.amazonaws.com/pw-ecr-repo-02:v_2", 
+                "cpu": 10, 
+                "portMappings": [
+                    {
+                        "protocol": "tcp", 
+                        "containerPort": 8080, 
+                        "hostPort": 80
+                    }
+                ], 
+                "memory": 256, 
+                "essential": true, 
+                "volumesFrom": []
+            }
+        ], 
+        "revision": 1
+    }
+}
+entered new service
+{
+    "service": {
+        "status": "ACTIVE", 
+        "taskDefinition": "arn:aws:ecs:us-west-2:583396343160:task-definition/pw-ecr-repo-02:1", 
+        "pendingCount": 0, 
+        "launchType": "EC2", 
+        "loadBalancers": [], 
+        "placementConstraints": [], 
+        "createdAt": 1524010609.822, 
+        "desiredCount": 1, 
+        "serviceName": "pw-ecr-repo-02-service", 
+        "clusterArn": "arn:aws:ecs:us-west-2:583396343160:cluster/PW-CLUSTER", 
+        "serviceArn": "arn:aws:ecs:us-west-2:583396343160:service/pw-ecr-repo-02-service", 
+        "deploymentConfiguration": {
+            "maximumPercent": 200, 
+            "minimumHealthyPercent": 100
+        }, 
+        "deployments": [
+            {
+                "status": "PRIMARY", 
+                "pendingCount": 0, 
+                "launchType": "EC2", 
+                "createdAt": 1524010609.822, 
+                "desiredCount": 1, 
+                "taskDefinition": "arn:aws:ecs:us-west-2:583396343160:task-definition/pw-ecr-repo-02:1", 
+                "updatedAt": 1524010609.822, 
+                "id": "ecs-svc/9223370512844165985", 
+                "runningCount": 0
+            }
+        ], 
+        "events": [], 
+        "runningCount": 0, 
+        "placementStrategy": []
+    }
+}
+Finished: SUCCESS

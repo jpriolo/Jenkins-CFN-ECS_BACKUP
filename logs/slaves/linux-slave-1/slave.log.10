@@ -1,4 +1,4 @@
-[04/17/18 22:53:13] Launching agent
+[04/17/18 20:59:13] Launching agent
 $ ssh -i PW ec2-user@0.0.0.0
 Warning: Identity file PW not accessible: No such file or directory.
 Pseudo-terminal will not be allocated because stdin is not a terminal.

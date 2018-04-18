@@ -15,7 +15,7 @@
       <usages>
         <entry>
           <string>cicd-aws-jenkins</string>
-          <ranges>18-20</ranges>
+          <ranges>18-21</ranges>
         </entry>
       </usages>
       <ancestorImageIds class="sorted-set">

@@ -1,0 +1,26 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-18 00:06:04.335 UTC</timestamp>
+  <original>
+    <name>cicd-maven-docker-ecs01</name>
+    <number>1</number>
+  </original>
+  <md5sum>01a65758e8fe84d770d829ff9f6e4347</md5sum>
+  <fileName>Docker image sha256:01a65758e8fe84d770d829ff9f6e43479fef1fe2ba6073ac4045ec708ca378cc</fileName>
+  <usages/>
+  <facets>
+    <org.jenkinsci.plugins.docker.commons.fingerprint.DockerDescendantFingerprintFacet plugin="docker-commons@1.11">
+      <timestamp>1524009964335</timestamp>
+      <imageId>sha256:01a65758e8fe84d770d829ff9f6e43479fef1fe2ba6073ac4045ec708ca378cc</imageId>
+      <usages>
+        <entry>
+          <string>cicd-maven-docker-ecs01</string>
+          <ranges>1-2</ranges>
+        </entry>
+      </usages>
+      <descendantImageIds class="sorted-set">
+        <string>sha256:4d6939c17bc2f364c4243ae66282a774ba1d69870f101f6548c980752ac70048</string>
+      </descendantImageIds>
+    </org.jenkinsci.plugins.docker.commons.fingerprint.DockerDescendantFingerprintFacet>
+  </facets>
+</fingerprint>

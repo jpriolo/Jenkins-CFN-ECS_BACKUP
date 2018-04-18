@@ -1,31 +1,11 @@
-[04/17/18 20:58:21] Launching agent
+[04/17/18 22:29:13] Launching agent
 $ ssh -i PW ec2-user@0.0.0.0
-ERROR: Unable to launch the agent for linux-slave-1
 Warning: Identity file PW not accessible: No such file or directory.
 Pseudo-terminal will not be allocated because stdin is not a terminal.
 Host key verification failed.
-Also:   java.io.IOException: Stream closed
-		at java.lang.ProcessBuilder$NullOutputStream.write(ProcessBuilder.java:433)
-		at java.io.OutputStream.write(OutputStream.java:116)
-		at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
-		at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
-		at java.io.FilterOutputStream.flush(FilterOutputStream.java:140)
-		at hudson.remoting.BinarySafeStream$2.flush(BinarySafeStream.java:305)
-		at java.io.ObjectOutputStream$BlockDataOutputStream.flush(ObjectOutputStream.java:1823)
-		at java.io.ObjectOutputStream.flush(ObjectOutputStream.java:719)
-		at hudson.remoting.Capability$1.close(Capability.java:132)
-		at hudson.remoting.Capability.writePreamble(Capability.java:144)
-java.io.IOException: Stream closed
-	at java.lang.ProcessBuilder$NullOutputStream.write(ProcessBuilder.java:433)
-	at java.io.OutputStream.write(OutputStream.java:116)
-	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
-	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
-	at java.io.FilterOutputStream.flush(FilterOutputStream.java:140)
-	at hudson.remoting.BinarySafeStream$2.flush(BinarySafeStream.java:305)
-	at java.io.ObjectOutputStream$BlockDataOutputStream.flush(ObjectOutputStream.java:1823)
-	at java.io.ObjectOutputStream.flush(ObjectOutputStream.java:719)
-	at hudson.remoting.Capability.writePreamble(Capability.java:143)
-	at hudson.remoting.ChannelBuilder.negotiate(ChannelBuilder.java:388)
+ERROR: Unable to launch the agent for linux-slave-1
+java.io.EOFException: unexpected stream termination
+	at hudson.remoting.ChannelBuilder.negotiate(ChannelBuilder.java:409)
 	at hudson.remoting.ChannelBuilder.build(ChannelBuilder.java:354)
 	at hudson.slaves.SlaveComputer.setChannel(SlaveComputer.java:415)
 	at hudson.slaves.CommandLauncher.launch(CommandLauncher.java:153)
@@ -36,4 +16,3 @@ java.io.IOException: Stream closed
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-ERROR: Process terminated with exit code 255
